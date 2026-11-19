@@ -31,7 +31,7 @@ if ingredients_list:
   for fruit_chosen in ingredients_list:
     ingredients_string += fruit_chosen + ' '
 
-  search_on = pd_df.loc[
+  #search_on = pd_df.loc[
   st.write(ingredients_string)
 
   my_insert_stmt = """ insert into smoothies.public.orders(ingredients, name_on_order) values ('""" + ingredients_string + """','""" + name_on_order +""")"""
